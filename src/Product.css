@@ -1,0 +1,50 @@
+:root {
+  --count: 3;
+  --gap: 15px;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.items > * {
+  flex: 0 0 auto;
+  width: calc(100% / var(--count) - (var(--gap) - (var(--gap) / var(--count))));
+}
+.card-price {
+  font-weight: bold;
+  font-size: 20px;
+}
+.card {
+  height: 100%;
+}
+.card-img-top {
+  max-height: 250px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-img-top > img {
+  max-height: calc(250px - 40px);
+  object-fit: contain;
+}
+.card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.card-body .btn {
+  max-width: 110px;
+}
+.card-details .card-img-top {
+  max-height: 350px;
+}
+.card-details .card-img-top > img {
+  max-height: calc(350px - 40px);
+}
