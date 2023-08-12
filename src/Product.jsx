@@ -19,7 +19,7 @@ export default function Product() {
               <div className="items-holder">
                 <div className="items">
                   {Array.isArray(products) &&
-                    products.map((item) => {
+                    products.slice(12, 15).map((item) => {
                       return (
                         <div className="item" key={item.id}>
                           <div className="card">
