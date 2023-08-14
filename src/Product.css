@@ -48,3 +48,9 @@
 .card-details .card-img-top > img {
   max-height: calc(350px - 40px);
 }
+.card-details .card-title {
+  display: block;
+  -webkit-line-clamp: inherit;
+  -webkit-box-orient: inherit;
+  overflow: visible;
+}
