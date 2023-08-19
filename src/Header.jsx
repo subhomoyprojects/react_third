@@ -19,6 +19,11 @@ export default function Header() {
                   Product
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/parent">
+                  Parent
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
