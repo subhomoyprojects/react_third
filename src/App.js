@@ -4,6 +4,7 @@ import Product from "./Product";
 import ProductDetails from "./ProductDetails";
 import Parent from "./PropsPassing/Parent";
 import ChildDetails from "./PropsPassing/ChildDetails";
+import CountComponent from "./UseReducerComponent/CountComponent";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="/parent" element={<Parent />} />
           <Route path="/parent/:id" element={<ChildDetails />} />
+          <Route path="/countComponent" element={<CountComponent />} />
         </Routes>
       </Router>
     </div>

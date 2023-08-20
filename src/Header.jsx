@@ -24,6 +24,11 @@ export default function Header() {
                   Parent
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/countComponent">
+                  Count Component
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
