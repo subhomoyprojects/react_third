@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import "../Product.css";
+import React, { memo } from "react";
 
-export default function Child({ data }) {
+function Child({ data }) {
   return (
     <>
       <main>
@@ -39,3 +40,5 @@ export default function Child({ data }) {
     </>
   );
 }
+
+export default memo(Child);
