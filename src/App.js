@@ -5,19 +5,24 @@ import ProductDetails from "./ProductDetails";
 import Parent from "./PropsPassing/Parent";
 import ChildDetails from "./PropsPassing/ChildDetails";
 import CountComponent from "./UseReducerComponent/CountComponent";
+import Notestate from "./context/NewContext";
+import About from "./context/Page";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Product />} />
-          <Route path="/product/:id" element={<ProductDetails />} />
-          <Route path="/parent" element={<Parent />} />
-          <Route path="/parent/:id" element={<ChildDetails />} />
-          <Route path="/countComponent" element={<CountComponent />} />
-        </Routes>
+        <Notestate>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Product />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/product/:id" element={<ProductDetails />} />
+            <Route path="/parent" element={<Parent />} />
+            <Route path="/parent/:id" element={<ChildDetails />} />
+            <Route path="/countComponent" element={<CountComponent />} />
+          </Routes>
+        </Notestate>
       </Router>
     </div>
   );
